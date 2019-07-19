@@ -1,10 +1,8 @@
-const getAllBikes = () => {
-    return [];
-}
+const controller = require('../controllers/bikes');
 
-module.exports = (router) => {
-    console.log("asdasdads")
-    router.get('/bikes', async ctx => {
-        ctx.body = getAllBikes()
-    });
-}
+module.exports = router => {
+  router.get('/bikes', async ctx => {
+    controller.getAllBikes();
+    ctx.body = [];
+  });
+};

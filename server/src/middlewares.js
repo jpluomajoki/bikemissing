@@ -1,4 +1,4 @@
-module.exports = (app) => {
+module.exports = app => {
   // Response time middleware
   app.use(async (ctx, next) => {
     const start = Date.now();

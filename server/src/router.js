@@ -1,11 +1,10 @@
 const Router = require('koa-router');
+const bikeRoutes = require('./routes/bikes');
+const helloRoutes = require('./routes/hello');
+
 const router = new Router();
-const bikeroutes = require('./routes/bikes')
 
-// bikeroutes(router);
-
-router.get('/hello', async ctx => {
-  ctx.body = { text: 'Hello World!' };
-});
+bikeRoutes(router);
+helloRoutes(router);
 
 module.exports = router;

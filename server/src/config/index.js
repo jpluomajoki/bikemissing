@@ -5,10 +5,8 @@ module.exports = {
   },
   database: {
     host: 'localhost',
-    port: 5432,
-    dbname: 'bikemissing',
-    username: 'psql',
-    password: 'psql'
+    port: 27017,
+    dbname: 'bikemissing'
   },
   server: {
     host: '127.0.0.1',
