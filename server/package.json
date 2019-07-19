@@ -1,0 +1,28 @@
+{
+  "name": "bikemissing-backend",
+  "version": "0.0.1",
+  "description": "Server application for bikemissing app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Jere Luomajoki",
+  "license": "ISC",
+  "dependencies": {
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "chai-http": "^4.3.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "koa": "2.7.0",
+    "koa-router": "7.4.0",
+    "prettier": "^1.18.2"
+  }
+}
