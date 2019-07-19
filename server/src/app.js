@@ -10,4 +10,5 @@ const port = process.env.port || config.server.port;
 middleware(app);
 app.use(router.routes());
 app.use(router.allowedMethods());
+
 app.listen(host, port);
