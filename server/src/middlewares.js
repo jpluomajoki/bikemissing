@@ -1,3 +1,6 @@
+const bodyParser = require('koa-bodyparser');
+const json = require('koa-json');
+
 module.exports = app => {
   // Response time middleware
   app.use(async (ctx, next) => {
@@ -32,4 +35,10 @@ module.exports = app => {
       ctx.app.emit('error', error, ctx);
     }
   });
+
+  // Pretty printer for json responses
+  app.use(json());
+
+  // For parsing POST body params
+  app.use(bodyParser());
 };
