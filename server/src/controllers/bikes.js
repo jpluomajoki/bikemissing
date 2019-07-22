@@ -15,6 +15,7 @@ const getAllBikes = async () => {
 };
 
 const insertBike = params => {
+  console.log(params);
   const bike = new BikeModel(params);
   bike.submitted = new Date();
   console.debug(`Inserting bike with id ${bike._id} to database`);

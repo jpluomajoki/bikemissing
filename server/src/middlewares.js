@@ -1,5 +1,6 @@
 const bodyParser = require('koa-bodyparser');
 const json = require('koa-json');
+const cors = require('@koa/cors');
 
 module.exports = app => {
   // Response time middleware
@@ -41,4 +42,7 @@ module.exports = app => {
 
   // For parsing POST body params
   app.use(bodyParser());
+
+  // allows CORS
+  app.use(cors());
 };

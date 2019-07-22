@@ -8,6 +8,8 @@ module.exports = router => {
   router.post('/bikes', async ctx => {
     try {
       controller.insertBike(ctx.request.body);
+      ctx.status = 201;
+      ctx.body = '';
     } catch (error) {
       console.error(error);
       ctx.throw(500);
